@@ -46,3 +46,6 @@ else
   echo "错误：$EEPROM_FILE 不存在，无法创建符号链接"
   exit 1
 fi
+sudo apt install libfuse-dev
+rm -rf feeds/packages/lang/golang
+git clone https://github.com/sbwml/packages_lang_golang -b 24.x feeds/packages/lang/golang
