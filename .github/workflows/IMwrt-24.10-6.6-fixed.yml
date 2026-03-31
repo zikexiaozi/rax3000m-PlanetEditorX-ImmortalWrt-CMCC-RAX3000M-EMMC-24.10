@@ -56,7 +56,7 @@ on:
         description: 'SSH connection to Actions'
         type: boolean
         required: true
-        default: true
+        default: false
 
   schedule:
     - cron: '0 16 * * *' # 北京时间每天00:00
