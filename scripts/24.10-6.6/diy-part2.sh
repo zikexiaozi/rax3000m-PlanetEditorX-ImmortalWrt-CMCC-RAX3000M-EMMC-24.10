@@ -28,7 +28,7 @@
 # echo "CONFIG_PACKAGE_luci-i18n-wechatpush-zh-cn=y" >> .config
 
 echo "CONFIG_PACKAGE_luci-app-partexp=y" >> .config
-echo "CONFIG_PACKAGE_luci-theme-kucat=y" >> .config
+# echo "CONFIG_PACKAGE_luci-theme-kucat=y" >> .config
 echo "CONFIG_PACKAGE_luci-app-advancedplus=y" >> .config
 
 # 删除 package/mtk/drivers/mt_wifi/files/mt7981-default-eeprom/e2p
@@ -50,6 +50,3 @@ else
   echo "错误：$EEPROM_FILE 不存在，无法创建符号链接"
   exit 1
 fi
-sudo apt install libfuse-dev
-rm -rf feeds/packages/lang/golang
-git clone https://github.com/sbwml/packages_lang_golang -b 24.x feeds/packages/lang/golang
