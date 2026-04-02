@@ -22,10 +22,10 @@
 
 # 预装
 # OpenClash
-# echo "CONFIG_PACKAGE_luci-app-openclash=y" >> .config
+echo "CONFIG_PACKAGE_luci-app-openclash=y" >> .config
 # 微信推送
-# echo "CONFIG_PACKAGE_luci-app-wechatpush=y" >> .config
-# echo "CONFIG_PACKAGE_luci-i18n-wechatpush-zh-cn=y" >> .config
+echo "CONFIG_PACKAGE_luci-app-wechatpush=y" >> .config
+echo "CONFIG_PACKAGE_luci-i18n-wechatpush-zh-cn=y" >> .config
 
 echo "CONFIG_PACKAGE_luci-app-partexp=y" >> .config
 # echo "CONFIG_PACKAGE_luci-theme-kucat=y" >> .config
